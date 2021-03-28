@@ -1,0 +1,460 @@
+/*===============================
+    CSS INDEX
+------------------
+ 1.COMMON CSS
+ 2.REUSEABLE CSS   
+ 3.NAVIGATION
+ 4.HEAD SECTION
+ 5.SOCIAL MEDIA
+ 6.ACCORDION SECTION
+ 7.ABOUT SECTION
+ 8.PRICING SECTION
+ 9.REVIEWS SECTION
+ 10.CONTACT SECTION
+===============================*/
+
+/*================
+  1.COMMON CSS 
+================*/
+html,body{
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+}
+/*================
+  2.REUSEABLE CSS 
+================*/
+a{
+    text-decoration: none;
+}
+i{
+    color:#ff8b38;
+}
+li{
+    list-style-type: none;
+}
+/*================
+  3.NAVIGATION 
+================*/
+.navbar{
+    background: #000000 !important;
+    border-bottom: .1rem solid #ff8b38;
+    z-index: 999;
+    .navbar-brand{
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        color: #fff;
+
+    }
+    ul{
+        li{
+            a{
+                text-transform: capitalize;
+                font-size: 1.5rem;
+                color: #fff;
+            }
+            a:hover{
+                color: #ff8b38 !important;
+            }
+        }
+    }
+        
+}
+/*================
+  4.HEAD SECTION
+================*/
+#head-section{
+    min-height: 70vh;
+    background: url(../img/bg1.jpg) no-repeat center top /cover;
+    background-attachment: fixed;
+
+    .dark-overlay{
+        background: rgba(0,0,0,0.7);
+        min-height: 70vh;
+    }
+    .row{
+        padding: 8rem 0rem;
+    }
+    .col-md-8{
+        h1{
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 6rem;
+        }
+        h3{
+            color: #fff;
+            font-size: 2rem;
+            line-height: 2rem;
+        }
+        h3::after{
+            content: '';
+            width: 6rem;
+            height: .15rem;
+            display: block;
+            margin-top: 1.5rem;
+            background: #ff8b38;
+        }
+        p{
+            color: #fff;
+        }
+        button{
+            margin-top: 4rem;
+        }
+    }
+    .col-md-4{
+        h3{
+            font-size: 1.6rem;
+            text-transform: capitalize;
+            color: #000;
+            strong{
+                color: #ff8b38;
+            }    
+        }
+        .card-footer{
+            padding: 0;
+            button{
+                width: 100%;
+                background: #ff8b38;
+                border: 0rem;
+                height: 3.2rem;
+                color: #fff;
+                transition:.1s;
+                -webkit-transition:.1s;
+                -moz-transition:.1s;
+                -ms-transition:.1s;
+                -o-transition:.1s;
+            }
+            button:hover{
+                background: #f56d29;
+            }
+            
+        }
+    }
+}
+/*================
+ 5.SOCIAL MEDIA
+================*/
+.social-media{
+    padding: 2rem 0rem;
+    h4{
+        text-transform: capitalize;
+        font-weight: bold;
+        font-size: 2rem;
+    }
+    .col-md-7{
+        text-align: center;
+        a{
+            ion-icon{
+                font-size: 2rem;   
+                color: #000; 
+            }
+            ion-icon:hover{
+                color: #ff8b38;
+            }
+        }               
+    }  
+}
+/*==================
+ 6.ACCORDION SECTION
+==================*/
+#accordion{
+    padding: 5rem 0rem;
+    background: #f5f5f5;
+}
+/*================
+ 7.ABOUT SECTION
+================*/
+#about{
+    padding: 7rem 0rem;
+    .col-lg-6{
+        img{
+            width: 50%;
+            box-shadow: 0.3rem 0.3rem 1rem rgba(0,0,0,0.7), -0.3rem 0.3rem 1rem rgba(0,0,0,0.7);
+        }
+        h3{
+            text-transform: capitalize;
+            color: #000;
+        }
+        h3::after{
+            content: '';
+            width: 6rem;
+            height: .15rem;
+            display: block;
+            margin-top: 1.5rem;
+            background: #ff8b38;
+        }
+        h4{
+            text-transform: capitalize;
+            color: #000;
+        }
+        ion-icon{
+            font-size: 2rem;
+            color: #ff8b38;
+        }
+    }
+}
+#about-2{
+    padding: 4rem 0rem;
+    background: #f5f5f5;
+    .col-lg-6{
+        h3{
+            text-transform: capitalize;
+        }
+        h3::after{
+            content: '';
+            width: 6rem;
+            height: .15rem;
+            display: block;
+            margin-top: 1.5rem;
+            background: #ff8b38;
+        }
+        img{
+            width: 80%;
+            box-shadow: 0.3rem 0.3rem 1rem rgba(0,0,0,0.7), -0.3rem 0.3rem 1rem rgba(0,0,0,0.7);
+        }
+    }
+}
+#about-3{
+    padding: 7rem 0rem;
+    h3{
+        font-size: 3rem;
+        text-transform: uppercase;
+        display: inline-block;
+    }
+    h3::after{
+        content: '';
+        width: 6rem;
+        height: .15rem;
+        display: block;
+        background: #ff8b38;
+        text-align: center;
+        margin: auto;
+        margin-top: 1.5rem;
+    }
+    h4{
+        text-transform: capitalize;
+    }
+    ion-icon{
+        color: #ff8b38;
+        padding: 1rem;
+        font-size: 3rem;
+    }
+}
+/*================
+ 8.PRICING SECTION
+================*/
+#pricing{
+    padding: 7rem 0rem;
+    text-align: center;
+    background: #f5f5f5;
+    .head-part{
+        h3::after{
+            content: '';
+            width: 6rem;
+            height: .15rem;
+            display: block;
+            background: #ff8b38;
+            text-align: center;
+            margin: auto;
+            margin-top: 1.5rem;
+        }
+    }
+    h3{
+        text-transform: uppercase;
+        font-size: 3rem;
+    }
+    .card{
+        background: #333333;
+        color: #fff;
+        .card-header{
+            border-bottom: .1rem solid #fff;
+            h4{
+                text-transform: capitalize;
+            }
+        }
+        .card-body{
+            border-bottom: .5rem solid #ff8b38;
+            h5{
+                text-transform: capitalize;
+            }
+        }
+        .footer{
+            li{
+                color: #333333;
+                text-transform: uppercase;
+            }
+        }
+
+    }
+}
+/*================
+ 9.REVIEWS SECTION
+================*/
+#reviews{
+    padding: 7rem 0rem;
+    text-align: center;
+    h3{
+        font-size: 2.5rem;
+        text-transform: uppercase;
+    }
+    h3::after{
+        content: '';
+        width: 6rem;
+        height: .15rem;
+        display: block;
+        background: #ff8b38;
+        text-align: center;
+        margin: auto;
+        margin-top: 1.5rem;
+    }
+    .col-md-4{
+        img{
+            width: 4rem;
+            height: 4rem;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+        }
+        h4{
+            text-transform: capitalize;
+            display: inline;
+            color: #333333;
+        }
+    }
+    
+    .client-1{
+        height: 12rem;
+        background: #f5f5f5;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 76%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+        p{
+            font-size: .9rem;
+            padding: 1rem .5rem;
+        }
+    }
+    .client-2{
+        height: 12rem;
+        background: #f5f5f5;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 76%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+        p{
+            font-size: .9rem;
+            padding: 1rem .5rem;
+        }
+    }
+    .client-3{
+        height: 12rem;
+        background: #f5f5f5;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 76%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+        p{
+            font-size: .9rem;
+            padding: 1rem .5rem;
+        }
+    }
+}
+
+#design{
+    background: url(../img/bg1.jpg) no-repeat center top / cover;
+    background-attachment: fixed;
+    height: 70vh;
+    position: relative;
+    .darkoverlay{
+        padding: 6rem 0rem;
+        background: rgba(0,0,0,0.7);
+        height: 100%;
+    }
+    .text-item{
+        width: 80%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    h3{
+        font-size: 2.5rem;
+        color: #fff;
+        text-transform: uppercase;
+    }
+    h3::after{
+        content: '';
+        width: 6rem;
+        height: .15rem;
+        display: block;
+        background: #ff8b38;
+        text-align: center;
+        margin: auto;
+        margin-top: 1.5rem;
+    }
+    p{
+        color: #fff;
+    }
+    button{
+        margin-top: 2rem;
+    }
+}
+/*=================
+ 10.CONTACT SECTION
+=================*/
+#contact{
+    padding: 7rem 0rem;
+    background: #f5f5f5;
+    h3{
+        font-size: 2.5rem;
+        color: #000;
+        text-transform: uppercase;
+    }
+    h3::after{
+        content: '';
+        width: 6rem;
+        height: .15rem;
+        display: block;
+        background: #ff8b38;
+        text-align: center;
+        margin: auto;
+        margin-top: 1.5rem;
+    }
+    input[type=text], input[type=email] ,textarea{
+        background: transparent;
+        border: none;
+        border-bottom: .1rem solid #ccc;
+    }
+}
+footer{
+    padding: 2rem 0rem;
+    background: #000;
+    a{
+        color: rgb(200, 197, 197);
+        font-size: 2rem;
+    }
+    a:hover{
+        color: #ff8b38;
+    }
+    .copy-right{
+        color: rgb(200, 197, 197);
+    }
+}
+
+
+/*================
+ MEDIA QUERY
+================*/
+@media screen and (max-width:576px){
+    #accordion{
+        h3{
+            font-size: 1.7rem;
+            font-weight: bold;
+        }
+        ul{
+            li{
+                display: inline;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+ 
